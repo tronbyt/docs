@@ -1,3 +1,6 @@
+---
+title: Getting Started
+---
 # Build for Tronbyt
 
 To build apps for Tronbyt, use [Pixlet](installing.md). Apps developed with

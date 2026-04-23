@@ -73,38 +73,38 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Home: index.md
+  - index.md
   - Tronbyt:
-    - What is Tronbyt?: what-is-tronbyt.md
-    - Getting Started: getting-started.md
-    - Tronbyt Manager: tronbyt-manager.md
-    - Configuration: configuration.md
-    - Device Specific Notes: device-notes.md
+    - what-is-tronbyt.md
+    - getting-started.md
+    - tronbyt-manager.md
+    - configuration.md
+    - device-notes.md
   - Pixlet:
-    - Getting Started: pixlet/getting-started.md
-    - Installing Pixlet: pixlet/installing.md
-    - Authoring Apps: pixlet/authoring-apps.md
-    - Pushing Apps: pixlet/pushing-apps.md
+    - pixlet/getting-started.md
+    - pixlet/installing.md
+    - pixlet/authoring-apps.md
+    - pixlet/pushing-apps.md
     - Tutorials:
-      - Clock App: pixlet/tutorials/clock-app.md
-      - Crypto Tracker: pixlet/tutorials/crypto-tracker.md
+      - pixlet/tutorials/clock-app.md
+      - pixlet/tutorials/crypto-tracker.md
     - Reference:
-      - Widgets: pixlet/reference/widgets.md
-      - Modules: pixlet/reference/modules.md
-      - Animation: pixlet/reference/animation.md
-      - Fonts: pixlet/reference/fonts.md
-      - Emoji: pixlet/reference/emoji.md
-      - Filters: pixlet/reference/filters.md
-      - GIFs: pixlet/reference/gifs.md
-      - 2x Apps: pixlet/reference/2x-apps.md
-      - Internationalization: pixlet/reference/i18n.md
-      - Schema: pixlet/reference/schema/schema.md
+      - pixlet/reference/widgets.md
+      - pixlet/reference/modules.md
+      - pixlet/reference/animations.md
+      - pixlet/reference/fonts.md
+      - pixlet/reference/emoji.md
+      - pixlet/reference/filters.md
+      - pixlet/reference/gifs.md
+      - pixlet/reference/2x-apps.md
+      - pixlet/reference/i18n.md
+      - pixlet/reference/schema/schema.md
     - Publish:
-      - Community Apps: pixlet/publish/community-apps.md
-      - Publishing Apps: pixlet/publish/publishing-apps.md
-      - Modifying Apps: pixlet/publish/modifying-apps.md
-      - Advanced: pixlet/publish/advanced.md
-      - FAQ: pixlet/publish/faq.md
+      - pixlet/publish/community-apps.md
+      - pixlet/publish/publishing-apps.md
+      - pixlet/publish/modifying-apps.md
+      - pixlet/publish/advanced.md
+      - pixlet/publish/faq.md
   - Community:
     - community/index.md
 

@@ -1,3 +1,6 @@
+---
+title: GIFs
+---
 # Creating GIFs for Tronbyt
 
 By using Pixlet's [image widget](widgets.md), images and GIFs can easily be displayed on pixel constrained displays. 

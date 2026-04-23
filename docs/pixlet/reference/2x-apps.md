@@ -1,3 +1,6 @@
+---
+title: 2x Apps
+---
 # Authoring Apps for 2x Resolution
 
 Tronbyt has a 64x32 pixel display. However, `pixlet` is able to render apps at higher resolutions. In particular, the `-2` flag will render apps at 2x, i.e. at a 128x64 resolution:

@@ -1,3 +1,6 @@
+---
+title: FAQ
+---
 # Frequently Asked Questions
 
 ## Why is the formatter so opinionated?

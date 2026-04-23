@@ -1,3 +1,6 @@
+---
+title: Advanced
+---
 # Advanced Features
 
 To write really great apps, it's helpful to understand how Tronbyt
