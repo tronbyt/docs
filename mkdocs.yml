@@ -33,6 +33,7 @@ theme:
         name: Switch to system preference
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.sections
     - navigation.indexes
     - navigation.top
