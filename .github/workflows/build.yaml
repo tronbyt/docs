@@ -1,0 +1,80 @@
+name: Build
+
+on: push
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+          cache: pip
+
+      - name: MkDocs cache
+        uses: actions/cache@v5
+        with:
+          path: .cache
+          key: ${{ runner.os }}-mkdocs-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-mkdocs-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build docs
+        env:
+          REPO_NAME: ${{ github.repository }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: mkdocs build
+
+      - name: Compress
+        run: tar -czvf docs.tar.gz site
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: docs
+          path: docs.tar.gz
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'main'
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download docs artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: docs
+
+      - name: Decompress docs
+        run: tar -xzvf docs.tar.gz
+
+      - name: Upload release artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

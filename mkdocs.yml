@@ -1,0 +1,112 @@
+site_name: Tronbyt Docs
+site_url: https://tronbyt.github.io/docs
+site_author: Tronbyt
+site_description: Tronbyt is an open source connected, smart display that shows weather, stocks, sports, and a whole lot more.
+
+repo_name: !ENV [REPO_NAME, "tronbyt/docs"]
+repo_url: !ENV [REPO_URL, "https://github.com/tronbyt/docs"]
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  font: false
+  logo: icons/logo.svg
+  favicon: icons/favicon.ico
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tooltips
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+plugins:
+  - search
+  - tags
+  - privacy
+  - git-revision-date-localized:
+      type: timeago
+  - minify:
+      minify_html: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+  - social
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+nav:
+  - Home: index.md
+  - Pixlet:
+    - Getting Started: build/getting_started.md
+    - Installing Pixlet: build/installing_pixlet.md
+    - Authoring Apps: build/authoring_apps.md
+    - Tutorials:
+      - Clock App: tutorials/clock_app.md
+      - Crypto Tracker: tutorials/crypto_tracker.md
+    - Reference:
+      - Widgets: reference/widgets.md
+      - Modules: reference/modules.md
+      - Animation: reference/animation.md
+      - Fonts: reference/fonts.md
+      - Emoji: reference/emoji.md
+      - Filters: reference/filters.md
+      - GIFs: reference/gifs.md
+      - 2x Apps: reference/2x_apps.md
+      - Internationalization: reference/i18n.md
+      - Schema: reference/schema/schema.md
+    - Integrate:
+      - Pushing Apps: integrate/pushing_apps.md
+    - Publish:
+      - Community Apps: publish/community_apps.md
+      - Publishing Apps: publish/publishing_apps.md
+      - Modifying Apps: publish/modifying_apps.md
+      - Advanced: publish/advanced.md
+      - FAQ: publish/faq.md
+  - Engage:
+    - Community: engage/community.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tronbyt
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/HxST87KxdK
+
+watch:
+  - overrides

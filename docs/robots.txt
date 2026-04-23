@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://tronbyt.github.io/docs/sitemap.xml
