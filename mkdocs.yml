@@ -78,7 +78,7 @@ nav:
   - Configuration: configuration.md
   - Device Specific Notes: device-notes.md
   - Pixlet:
-    - Getting Started: pixlet/getting-started.md
+    - Build for Tronbyt: pixlet/build-for-tronbyt.md
     - Installing Pixlet: pixlet/installing.md
     - Authoring Apps: pixlet/authoring-apps.md
     - Pushing Apps: pixlet/pushing-apps.md
