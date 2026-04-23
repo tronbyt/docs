@@ -27,22 +27,16 @@ jobs:
           python-version: 3.x
           cache: pip
 
-      - name: MkDocs cache
-        uses: actions/cache@v5
-        with:
-          path: .cache
-          key: ${{ runner.os }}-mkdocs-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-mkdocs-
-
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Build docs
-        env:
-          REPO_NAME: ${{ github.repository }}
-          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
-        run: mkdocs build
+        run: zensical build
+
+      - name: Minify
+        uses: docker://tdewolff/minify
+        with:
+          args: -i -r /github/workspace/site
 
       - name: Compress
         run: tar -czvf docs.tar.gz site
