@@ -33,4 +33,4 @@ def main(config):
 
 Here's the resulting image:
 
-![](../img/clock.gif)
+![](../../img/clock.gif)

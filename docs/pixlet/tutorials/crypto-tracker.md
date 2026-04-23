@@ -42,7 +42,7 @@ us access to Pixlet's [full set of Widgets](../reference/widgets.md). Next is th
 mandatory `main()` function, which must always return a `Root`
 Widget. In our case, we pass `Root` a `Text` Widget as child.
 
-![](../img/tutorial_1.gif)
+![](../../img/tutorial_1.gif)
 
 By default, `Text` uses the "tb-8" font, but this can be overridden
 with the `font` parameter. You can read more about the available fonts
@@ -88,7 +88,7 @@ definition](https://github.com/google/starlark-go/blob/master/doc/spec.md). Anot
 built-in worth mentioning is `print()`, which of course is invaluable
 in debugging your Pixlet scripts.
 
-![](../img/tutorial_2.gif)
+![](../../img/tutorial_2.gif)
 
 A perfectly functional Bitcoin price tracker.
 
@@ -98,7 +98,7 @@ To make our applet a bit snazzier, we headed over to
 [Pixilart](https://www.pixilart.com/) and drew this simple Bitcoin
 icon:
 
-![](../img/tutorial_btcicon.png)
+![](../../img/tutorial_btcicon.png)
 
 Pixlet allows us to embed graphics in our scripts through the `Image`
 widget. We'll use Starlib's `encoding/base64` module to embed the
@@ -138,7 +138,7 @@ def main():
     )
 ```
 
-![](../img/tutorial_3.gif)
+![](../../img/tutorial_3.gif)
 
 This clearly leaves something to be desired as far as layout is
 concerned, but the individual elements (the icon and the price) aren't
@@ -214,7 +214,7 @@ Don't worry if all this alignment stuff feels a bit confusing at
 first. It'll be a lot clearer when you've had a chance to play around
 with it.
 
-![](../img/tutorial_4.gif)
+![](../../img/tutorial_4.gif)
 
 Now that's a Bitcoin tracker.
 
@@ -286,4 +286,4 @@ we'd see a cache miss as the old record has expired.
 
 ## What's next?
 
-Take a look at the guide on [authoring apps](../build/authoring_apps.md), the [Widget reference](../reference/widgets.md), and start hacking!
+Take a look at the guide on [authoring apps](../authoring-apps.md), the [Widget reference](../reference/widgets.md), and start hacking!

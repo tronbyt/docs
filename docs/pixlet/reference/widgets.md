@@ -64,7 +64,7 @@ render.Animation(
      ],
 )
 ```
-![](../img/widget_Animation_0.gif)
+![](../../img/widget_Animation_0.gif)
 
 ## Arc
 Arc draws an arc. The arc is centered at (x, y).
@@ -93,7 +93,7 @@ render.Arc(
     color = "#0ff",
 )
 ```
-![](../img/widget_Arc_0.gif)
+![](../../img/widget_Arc_0.gif)
 
 ## Box
 A Box is a rectangular widget that can hold a child widget.
@@ -123,7 +123,7 @@ render.Box(
     )
 )
 ```
-![](../img/widget_Box_0.gif)
+![](../../img/widget_Box_0.gif)
 
 ## Circle
 Circle draws a circle with the given `diameter` and `color`. If a
@@ -145,7 +145,7 @@ render.Circle(
     child=render.Circle(color="#0ff", diameter=10),
 )
 ```
-![](../img/widget_Circle_0.gif)
+![](../../img/widget_Circle_0.gif)
 
 ## Column
 Column lays out and draws its children vertically (in a column).
@@ -188,7 +188,7 @@ render.Column(
     ],
 )
 ```
-![](../img/widget_Column_0.gif)
+![](../../img/widget_Column_0.gif)
 
 #### Example
 ```
@@ -203,7 +203,7 @@ render.Column(
     ],
 )
 ```
-![](../img/widget_Column_1.gif)
+![](../../img/widget_Column_1.gif)
 
 ## Emoji
 Emoji renders a single emoji at a specified height, maintaining aspect ratio.
@@ -221,7 +221,7 @@ used in text rendering.
 ```
 render.Emoji(emoji="😀", height=32) # Large smiley face
 ```
-![](../img/widget_Emoji_0.gif)
+![](../../img/widget_Emoji_0.gif)
 
 ## Image
 Image renders the binary image data passed via `src`. Supported
@@ -269,7 +269,7 @@ render.Line(
     color = "#fff",
 )
 ```
-![](../img/widget_Line_0.gif)
+![](../../img/widget_Line_0.gif)
 
 ## Marquee
 Marquee scrolls its child horizontally or vertically.
@@ -314,7 +314,7 @@ render.Marquee(
     offset_end=32,
 )
 ```
-![](../img/widget_Marquee_0.gif)
+![](../../img/widget_Marquee_0.gif)
 
 ## Padding
 Padding places padding around its child.
@@ -352,7 +352,7 @@ render.PieChart(
     diameter = 30,
 )
 ```
-![](../img/widget_PieChart_0.gif)
+![](../../img/widget_PieChart_0.gif)
 
 ## Plot
 Plot is a widget that draws a data series.
@@ -396,7 +396,7 @@ render.Plot(
     fill = True,
 )
 ```
-![](../img/widget_Plot_0.gif)
+![](../../img/widget_Plot_0.gif)
 
 ## Polygon
 Polygon draws a polygon.
@@ -419,7 +419,7 @@ render.Polygon(
     stroke_width = 1,
 )
 ```
-![](../img/widget_Polygon_0.gif)
+![](../../img/widget_Polygon_0.gif)
 
 ## Root
 Root is the top level of every Widget tree.
@@ -485,7 +485,7 @@ render.Row(
     ],
 )
 ```
-![](../img/widget_Row_0.gif)
+![](../../img/widget_Row_0.gif)
 
 #### Example
 ```
@@ -500,7 +500,7 @@ render.Row(
     ],
 )
 ```
-![](../img/widget_Row_1.gif)
+![](../../img/widget_Row_1.gif)
 
 ## Sequence
 Sequence renders a list of child widgets in sequence.
@@ -528,7 +528,7 @@ render.Sequence(
     ],
 )
 ```
-![](../img/widget_Sequence_0.gif)
+![](../../img/widget_Sequence_0.gif)
 
 ## Stack
 Stack draws its children on top of each other.
@@ -552,7 +552,7 @@ render.Stack(
     ],
 )
 ```
-![](../img/widget_Stack_0.gif)
+![](../../img/widget_Stack_0.gif)
 
 ## Text
 Text draws a string of text on a single line.
@@ -576,7 +576,7 @@ information.
 ```
 render.Text(content="Tronbyt!", color="#099")
 ```
-![](../img/widget_Text_0.gif)
+![](../../img/widget_Text_0.gif)
 
 ## WrappedText
 WrappedText draws multi-line text.
@@ -610,4 +610,4 @@ render.WrappedText(
     color="#fa0",
 )
 ```
-![](../img/widget_WrappedText_0.gif)
+![](../../img/widget_WrappedText_0.gif)

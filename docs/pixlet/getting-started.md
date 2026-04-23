@@ -1,10 +1,10 @@
 # Build for Tronbyt
 
-To build apps for Tronbyt, use [Pixlet](installing_pixlet.md). Apps developed with
+To build apps for Tronbyt, use [Pixlet](installing.md). Apps developed with
 Pixlet can be served in a browser or pushed to a physical Tronbyt device.
 
 ## Requirements
-* You've installed [Pixlet](installing_pixlet.md).
+* You've installed [Pixlet](installing.md).
 * You are familiar with using a terminal.
 
 ## Hello, World!
@@ -69,13 +69,13 @@ it, or even push it to a Tronbyt device with `pixlet push`.
 
 ## What's next?
 
-* Read the [in-depth tutorial on building a more advanced app](../tutorials/crypto_tracker.md).
-* See our [best practices for authoring apps](authoring_apps.md).
-* Check out the references for the [**widgets**](../reference/widgets.md)
-  and [**modules**](../reference/modules.md).
-* Learn about [fonts you can use in Pixlet apps](../reference/fonts.md).
+* Read the [in-depth tutorial on building a more advanced app](tutorials/crypto-tracker.md).
+* See our [best practices for authoring apps](authoring-apps.md).
+* Check out the references for the [**widgets**](reference/widgets.md)
+  and [**modules**](reference/modules.md).
+* Learn about [fonts you can use in Pixlet apps](reference/fonts.md).
 
 ### Publish your app
 
 Once you've got an app that's looking spiffy, you can
-[publish and share it with the community](../publish/community_apps.md).
+[publish and share it with the community](publish/community-apps.md).

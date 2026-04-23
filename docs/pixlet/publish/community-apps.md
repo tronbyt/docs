@@ -5,7 +5,7 @@ other users and community members. When you browse
 for new content to add to your Tronbyt, you'll notice
 that plenty of them have an attribution. These are all community contributed apps.
 
-![A community contributed app](../img/publish_attribution_phase_pf_moon.png)
+![A community contributed app](../../img/publish_attribution_phase_pf_moon.png)
 
 
 ## How to contribute
@@ -31,7 +31,7 @@ developers to make sure it's up to snuff.
 Once a new app is merged, it will be publicly available to everyone.
 
 For the nitty gritty on how to get a new app published, check out
-[Publishing Apps](publishing_apps.md).
+[Publishing Apps](publishing-apps.md).
 
 ### How to pass a review
 

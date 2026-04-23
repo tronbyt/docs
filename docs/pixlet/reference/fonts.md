@@ -16,7 +16,7 @@ a lot when displaying names of people, locations, etc.
 
 The definitions in this graphic are helpful:
 
-![Typography line terms](../img/Typography_Line_Terms.png)
+![Typography line terms](../../img/Typography_Line_Terms.png)
 
 In addition to these, a glyph's _advance_ is the distance between its
 "origin point", i.e. the leftmost point of the baseline, and the
@@ -80,7 +80,7 @@ others. Attribution is given for each below.
 
 ### tb-8
 
-![tb-8 example](../img/tb-8.gif)
+![tb-8 example](../../img/tb-8.gif)
 
 A modified version of 5x8. This font has variable advance (i.e. it's
 not mono-spaced) and slightly tweaked glyphs for improved
@@ -109,7 +109,7 @@ sign and dollar sign '$' have no descent and fit in 7 pixels.
 ### Dina_r400-6
 By [Jorgen Ibsen](https://www.dcmembers.com/jibsen/download/61/)
 
-![Dina_r400-6 example](../img/Dina_r400-6.gif)
+![Dina_r400-6 example](../../img/Dina_r400-6.gif)
 
 Covers Basic Latin and Latin-1 Supplement, but nothing beyond
 that. 256 code points.
@@ -123,7 +123,7 @@ that. 256 code points.
 ### 5x8
 By [Markus Kuhn](http://www.cl.cam.ac.uk/~mgk25/).
 
-![5x8 example](../img/5x8.gif)
+![5x8 example](../../img/5x8.gif)
 
 Covers Basic Latin, Latin-1 Supplement, a ton of other Latin code
 blocks. 1426 code points in total.
@@ -137,7 +137,7 @@ blocks. 1426 code points in total.
 ### 6x13
 By [Markus Kuhn](http://www.cl.cam.ac.uk/~mgk25/).
 
-![6x16 example](../img/6x13.gif)
+![6x16 example](../../img/6x13.gif)
 
 Covers Basic Latin, Latin1- Supplement, and a bazillion other glyphs,
 including the runic code block. 4121 code points in total.
@@ -151,7 +151,7 @@ including the runic code block. 4121 code points in total.
 ### 6x10
 By [olikraus](https://github.com/olikraus/u8g2/wiki).
 
-![6x10 example](../img/6x10.gif)
+![6x10 example](../../img/6x10.gif)
 
 A medium, monospace, bitmap font with a size of 6x10 pixels. Ideal for fixed-width applications.
 
@@ -164,7 +164,7 @@ A medium, monospace, bitmap font with a size of 6x10 pixels. Ideal for fixed-wid
 ### 6x10-rounded
 Original font By [olikraus](https://github.com/olikraus/u8g2/wiki) & modified by [SynthSolar](https://github.com/SynthSolar).
 
-![6x10-rounded example](../img/6x10-rounded.gif)
+![6x10-rounded example](../../img/6x10-rounded.gif)
 
 A medium, monospace, rounded, bitmap font with a size of 6x10 pixels. Ideal for fixed-width applications.
 
@@ -177,7 +177,7 @@ A medium, monospace, rounded, bitmap font with a size of 6x10 pixels. Ideal for 
 ### 10x20
 By [Markus Kuhn](http://www.cl.cam.ac.uk/~mgk25/).
 
-![10x20 example](../img/10x20.gif)
+![10x20 example](../../img/10x20.gif)
 
 Covers Basic Latin, Latin1- Supplement, and a bazillion other glyphs,
 including the runic code block. 4121 code points in total.
@@ -191,7 +191,7 @@ including the runic code block. 4121 code points in total.
 ### tom-thumb
 By [Robey Pointer](https://robey.lag.net/2010/01/23/tiny-monospace-font.html)
 
-![tom-thumb example](../img/tom-thumb.gif)
+![tom-thumb example](../../img/tom-thumb.gif)
 
 A very tiny, monospace, bitmap font. It's a 4x6 font with 3x5 usable pixels.
 This font is great for a really tiny font that also supports upper and lower
@@ -206,7 +206,7 @@ cased characters.
 ### CG-pixel-3x5-mono
 By [Ilmari Karonen](https://vyznev.net/)
 
-![CG-pixel-3x5-mono example](../img/CG-pixel-3x5-mono.gif)
+![CG-pixel-3x5-mono example](../../img/CG-pixel-3x5-mono.gif)
 
 This font is a true 3x5 font which only occupies 5 pixels on a display. Check
 out the 4x5 version if you have the width to spare.
@@ -220,7 +220,7 @@ out the 4x5 version if you have the width to spare.
 ### CG-pixel-4x5-mono
 By [Ilmari Karonen](https://vyznev.net/)
 
-![CG-pixel-4x5-mono example](../img/CG-pixel-4x5-mono.gif)
+![CG-pixel-4x5-mono example](../../img/CG-pixel-4x5-mono.gif)
 
 This font is a true 4x5 font which only occupies 5 pixels on a display. Check
 out the 3x5 version if you are also constrained on width.
@@ -234,7 +234,7 @@ out the 3x5 version if you are also constrained on width.
 ### Terminus Variable
 By [Dimitar Toshkov Zhekov](https://terminus-font.sourceforge.net/)
 
-![Terminus Variable](../img/terminus-variable.png)
+![Terminus Variable](../../img/terminus-variable.png)
 
 Terminus Variable is a family of bitmap fonts that supports multiple pixel sizes. Each size ships in a normal weight, with matching light weight variants at 14px and larger. All styles include 1356 glyphs (ISO10646-1 coverage). Numeric glyphs, the colon, and the space character share the same width, so clock layouts and other tabular number displays stay aligned.
 

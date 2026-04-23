@@ -1,7 +1,7 @@
 # Authoring Apps
 
 This guide provides best practices on how to build apps to integrate well with
-the Tronbyt ecosystem. If you haven't already, check out the [tutorial](../tutorials/crypto_tracker.md) for how to get started writing apps.
+the Tronbyt ecosystem. If you haven't already, check out the [tutorial](tutorials/crypto-tracker.md) for how to get started writing apps.
 
 ## Architecture
 Pixlet is heavily influenced by the way Tronbyt devices work. The Tronbyt displays tiny 64x32 animations and images. It keeps a local cache of the apps that are installed on it.
@@ -72,7 +72,7 @@ For example, if your app receives an error from an external API, try these optio
 [1]: https://github.com/bazelbuild/starlark/blob/master/spec.md#fail
 [2]: https://github.com/bazelbuild/starlark/blob/master/spec.md#print
 [3]: https://github.com/tronbyt/apps
-[4]: ../reference/schema/schema.md
+[4]: reference/schema/schema.md
 
 ## Performance profiling
 

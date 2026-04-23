@@ -35,7 +35,7 @@ user will assume is correct.
 !!! note
 
     `show_full_animation` only works when the app is deployed to the Tronbyt servers.
-    Please see [Publishing Apps](publishing_apps.md).
+    Please see [Publishing Apps](publishing-apps.md).
 
 Most users have multiple apps installed on their Tronbyts. By default,
 each will be displayed for about 15 seconds, although this _app cycle

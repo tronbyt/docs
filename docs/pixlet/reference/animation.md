@@ -174,7 +174,7 @@ animation.Transformation(
     ],
 ),
 ```
-![](../img/widget_Transformation_0.gif)
+![](../../img/widget_Transformation_0.gif)
 
 ## Translate
 Translate transforms by translating by a given offset.

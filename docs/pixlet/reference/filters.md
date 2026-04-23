@@ -28,7 +28,7 @@ filter.Blur(
     radius = 2.0,
 )
 ```
-![Blur Example](../img/filter_Blur_0.webp)
+![Blur Example](../../img/filter_Blur_0.webp)
 
 ## Brightness
 Brightness adjusts the brightness of the child widget.
@@ -46,7 +46,7 @@ filter.Brightness(
     change = -0.5,
 )
 ```
-![Brightness Example](../img/filter_Brightness_0.webp)
+![Brightness Example](../../img/filter_Brightness_0.webp)
 
 ## Contrast
 Contrast adjusts the contrast of the child widget.
@@ -64,7 +64,7 @@ filter.Contrast(
     factor = 2.0,
 )
 ```
-![Contrast Example](../img/filter_Contrast_0.webp)
+![Contrast Example](../../img/filter_Contrast_0.webp)
 
 ## EdgeDetection
 EdgeDetection applies an edge detection filter to the child widget.
@@ -82,7 +82,7 @@ filter.EdgeDetection(
     radius = 2.0,
 )
 ```
-![EdgeDetection Example](../img/filter_EdgeDetection_0.webp)
+![EdgeDetection Example](../../img/filter_EdgeDetection_0.webp)
 
 ## Emboss
 Emboss applies an emboss filter to the child widget.
@@ -98,7 +98,7 @@ filter.Emboss(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![Emboss Example](../img/filter_Emboss_0.webp)
+![Emboss Example](../../img/filter_Emboss_0.webp)
 
 ## FlipHorizontal
 FlipHorizontal flips the child widget horizontally.
@@ -114,7 +114,7 @@ filter.FlipHorizontal(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![FlipHorizontal Example](../img/filter_FlipHorizontal_0.webp)
+![FlipHorizontal Example](../../img/filter_FlipHorizontal_0.webp)
 
 ## FlipVertical
 FlipVertical flips the child widget vertically.
@@ -130,7 +130,7 @@ filter.FlipVertical(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![FlipVertical Example](../img/filter_FlipVertical_0.webp)
+![FlipVertical Example](../../img/filter_FlipVertical_0.webp)
 
 ## Gamma
 Gamma applies gamma correction to the child widget.
@@ -148,7 +148,7 @@ filter.Gamma(
     gamma = 0.5,
 )
 ```
-![Gamma Example](../img/filter_Gamma_0.webp)
+![Gamma Example](../../img/filter_Gamma_0.webp)
 
 ## Grayscale
 Grayscale converts the child widget to grayscale.
@@ -164,7 +164,7 @@ filter.Grayscale(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![Grayscale Example](../img/filter_Grayscale_0.webp)
+![Grayscale Example](../../img/filter_Grayscale_0.webp)
 
 ## Hue
 Hue adjusts the hue of the child widget.
@@ -182,7 +182,7 @@ filter.Hue(
     change = 180.0,
 )
 ```
-![Hue Example](../img/filter_Hue_0.webp)
+![Hue Example](../../img/filter_Hue_0.webp)
 
 ## Invert
 Invert inverts the colors of the child widget.
@@ -198,7 +198,7 @@ filter.Invert(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![Invert Example](../img/filter_Invert_0.webp)
+![Invert Example](../../img/filter_Invert_0.webp)
 
 ## Rotate
 Rotate rotates the child widget by the specified angle.
@@ -216,7 +216,7 @@ filter.Rotate(
     angle = 10.0,
 )
 ```
-![Rotate Example](../img/filter_Rotate_0.webp)
+![Rotate Example](../../img/filter_Rotate_0.webp)
 
 ## Saturation
 Saturation adjusts the saturation of the child widget.
@@ -234,7 +234,7 @@ filter.Saturation(
     factor = 1,
 )
 ```
-![Saturation Example](../img/filter_Saturation_0.webp)
+![Saturation Example](../../img/filter_Saturation_0.webp)
 
 ## Sepia
 Sepia applies a sepia filter to the child widget.
@@ -250,7 +250,7 @@ filter.Sepia(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![Sepia Example](../img/filter_Sepia_0.webp)
+![Sepia Example](../../img/filter_Sepia_0.webp)
 
 ## Sharpen
 Sharpen sharpens the child widget.
@@ -266,7 +266,7 @@ filter.Sharpen(
     child = render.Image(src="...", width=64, height=64),
 )
 ```
-![Sharpen Example](../img/filter_Sharpen_0.webp)
+![Sharpen Example](../../img/filter_Sharpen_0.webp)
 
 ## Shear
 Shear shears the child widget horizontally and/or vertically.
@@ -285,7 +285,7 @@ filter.Shear(
     x_angle = 10.0,
 )
 ```
-![Shear Example](../img/filter_Shear_0.webp)
+![Shear Example](../../img/filter_Shear_0.webp)
 
 ## Threshold
 Threshold applies a threshold filter to the child widget, making it black and white.
@@ -303,4 +303,4 @@ filter.Threshold(
     level = 128.0,
 )
 ```
-![Threshold Example](../img/filter_Threshold_0.webp)
+![Threshold Example](../../img/filter_Threshold_0.webp)

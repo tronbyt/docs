@@ -7,7 +7,7 @@ Tronbyt API.
 
 ## Pixlet Push
 
-Let's say you've [built](../tutorials/crypto_tracker.md) a beautiful bitcoin
+Let's say you've [built](tutorials/crypto-tracker.md) a beautiful bitcoin
 tracker located in `examples/bitcoin.star`. You can easily render this
 to a webp image using pixlet:
 
@@ -57,4 +57,4 @@ Keep in mind though, the graphic associated with the installation will
 only change if you push a new one. If you really want to stay up to
 speed on the price of Bitcoin, you'll have to either keep pushing the
 graphic, or look into [publishing your
-app](../publish/publishing_apps.md). =)
+app](publish/publishing-apps.md). =)

@@ -72,32 +72,35 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - What is Tronbyt?: what-is-tronbyt.md
+  - Getting Started: getting-started.md
+  - Tronbyt Manager: tronbyt-manager.md
+  - Device Specific Notes: device-notes.md
   - Pixlet:
-    - Getting Started: build/getting_started.md
-    - Installing Pixlet: build/installing_pixlet.md
-    - Authoring Apps: build/authoring_apps.md
+    - Getting Started: pixlet/getting-started.md
+    - Installing Pixlet: pixlet/installing.md
+    - Authoring Apps: pixlet/authoring-apps.md
+    - Pushing Apps: pixlet/pushing-apps.md
     - Tutorials:
-      - Clock App: tutorials/clock_app.md
-      - Crypto Tracker: tutorials/crypto_tracker.md
+      - Clock App: pixlet/tutorials/clock-app.md
+      - Crypto Tracker: pixlet/tutorials/crypto-tracker.md
     - Reference:
-      - Widgets: reference/widgets.md
-      - Modules: reference/modules.md
-      - Animation: reference/animation.md
-      - Fonts: reference/fonts.md
-      - Emoji: reference/emoji.md
-      - Filters: reference/filters.md
-      - GIFs: reference/gifs.md
-      - 2x Apps: reference/2x_apps.md
-      - Internationalization: reference/i18n.md
-      - Schema: reference/schema/schema.md
-    - Integrate:
-      - Pushing Apps: integrate/pushing_apps.md
+      - Widgets: pixlet/reference/widgets.md
+      - Modules: pixlet/reference/modules.md
+      - Animation: pixlet/reference/animation.md
+      - Fonts: pixlet/reference/fonts.md
+      - Emoji: pixlet/reference/emoji.md
+      - Filters: pixlet/reference/filters.md
+      - GIFs: pixlet/reference/gifs.md
+      - 2x Apps: pixlet/reference/2x-apps.md
+      - Internationalization: pixlet/reference/i18n.md
+      - Schema: pixlet/reference/schema/schema.md
     - Publish:
-      - Community Apps: publish/community_apps.md
-      - Publishing Apps: publish/publishing_apps.md
-      - Modifying Apps: publish/modifying_apps.md
-      - Advanced: publish/advanced.md
-      - FAQ: publish/faq.md
+      - Community Apps: pixlet/publish/community-apps.md
+      - Publishing Apps: pixlet/publish/publishing-apps.md
+      - Modifying Apps: pixlet/publish/modifying-apps.md
+      - Advanced: pixlet/publish/advanced.md
+      - FAQ: pixlet/publish/faq.md
   - Engage:
     - Community: engage/community.md
 

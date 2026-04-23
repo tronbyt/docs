@@ -1,5 +1,5 @@
 # Publishing Apps
-So pumped you're here and want to publish an app! If you haven't done so already, check out the overview on [community apps](community_apps.md) to get a better sense of what you're getting yourself into. You'll also want to check out the guide on [authoring apps](../build/authoring_apps.md) to get a better sense of how everything works together.
+So pumped you're here and want to publish an app! If you haven't done so already, check out the overview on [community apps](community-apps.md) to get a better sense of what you're getting yourself into. You'll also want to check out the guide on [authoring apps](../authoring-apps.md) to get a better sense of how everything works together.
 
 One final note before we hop in - you may want to check out the [schema docs](../reference/schema/schema.md) if you haven't already. Schema allows you to display options inside of the Tronbyt app so the user can configure your starlark applet.
 
@@ -55,9 +55,9 @@ In this example, the fields map as follows:
 - **Description**: Display the time in a groovy, human-readable way.
 - **Author**: Max Timkovich
 
-![example](../img/example.png)
+![example](../../img/example.png)
 
-![details](../img/example_details.png)
+![details](../../img/example_details.png)
 
 
 #### Run your App

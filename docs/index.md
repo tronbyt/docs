@@ -6,14 +6,12 @@
 
 ## Getting Started
 
-One of the best parts about Tronbyt is that it's an open platform that you can
-build on, publish apps for, and integrate with your own scripts:
-
-* [Build your own pixel-based apps](build/getting_started.md) to display
-  on your Tronbyt.
+* [Set up the Tronbyt server](getting-started.md) on your own hardware or a free hosting service.
+* [Configure your devices and apps](tronbyt-manager.md) with Tronbyt Manager.
+* [Build your own pixel-based apps](pixlet/getting-started.md) to display on your Tronbyt.
 * Deploy and run your apps
-  * [Publish your app to the world](publish/community_apps.md)
-  * [Push to API](integrate/pushing_apps.md)
+  * [Publish your app to the world](pixlet/publish/community-apps.md)
+  * [Push to API](pixlet/pushing-apps.md)
 
 ### Engage with the community
 
