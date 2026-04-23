@@ -72,23 +72,33 @@ Log in to your Tronbyt server with the username/password `Admin`/`password`.
         You might need to redo this step if the colors don't look right on your device.
 
 5. Press "Generate Firmware file". This will download a file with a name like `firmware_tidbyt_gen1_cfb4bf45.bin` to your downloads folder.
-6. Download [ESP flasher](https://github.com/Jason2866/ESP_Flasher/releases).
-7. Install USB drivers if needed:
 
-    **Windows:** Download [CP210x Drivers](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads). Extract the archive, then right click `silabser.inf` and select "Install". (You might need to turn on [Show File Extensions](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01) to see the `.inf`)
+### Flash firmware
 
-    **Mac:** Download [CH34x Drivers](https://github.com/WCHSoftGroup/ch34xser_macos)
+After generating and downloading the firmware file:
 
-8. Connect your display device to a computer via USB. It does NOT need to be the computer running the Tronbyt software.
-9. Open ESP flasher and go through the different serial ports until you see something appear in the console.
-10. Press "Browse" next to "Firmware" and select the firmware you downloaded from Tronbyt.
-11. Press "Flash ESP". It will take a minute or two, but eventually it will say "Done! Flashing is complete!"
+1. Connect your device to your computer with a data USB cable
+2. Open one of these web-based flashers in Chrome or Edge:
+    - [Espressif Web Flasher](https://espressif.github.io/esptool-js/)
+    - [ESPConnect Web Flasher](https://thelastoutpostworkshop.github.io/ESPConnect/)
+3. Click Connect and select your device's serial port
+4. Click Flash Tools if needed
+5. Set the flash address to `0x0`
+6. Select your downloaded firmware file and click Program/Flash
+7. Reboot the device if it doesn't restart automatically
 
-    !!! tip
+!!! note
 
-        If you have trouble with this step and you have a Tidbyt Gen 1, see [Error when trying to flash new firmware](device-notes.md#error-when-trying-to-flash-new-firmware).
+    macOS and Windows users may need to install a serial driver:
 
-12. Check your device! It should be displaying something now!
+    - [CP210x Drivers](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+    - [CH34x Drivers](https://github.com/WCHSoftGroup/ch34xser_macos)
+
+!!! tip
+
+    If you have trouble flashing a Tidbyt Gen 1, see [Error when trying to flash new firmware](device-notes.md#error-when-trying-to-flash-new-firmware).
+
+Check your device! It should be displaying something now!
 
 If you need to change your WiFi credentials or image URL after flashing, you can use the WiFi config portal. See the [Tronbyt WiFi Setup Portal](https://www.youtube.com/watch?v=OAWUCG-HRDs) video for a walkthrough.
 
