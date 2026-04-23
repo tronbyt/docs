@@ -59,7 +59,7 @@ Log in to your Tronbyt server with the username/password `Admin`/`password`.
 
     Change the password immediately by going into "Admin".
 
-### Update firmware
+### Generate firmware
 
 1. On the "Home" page, click "New Tronbyt".
 2. Give it a name (this will be displayed on the Home screen), select the type of device you have, and hit "Save".
@@ -73,7 +73,7 @@ Log in to your Tronbyt server with the username/password `Admin`/`password`.
 
 5. Press "Generate Firmware file". This will download a file with a name like `firmware_tidbyt_gen1_cfb4bf45.bin` to your downloads folder.
 
-### Flash firmware
+### Initial flash (USB)
 
 After generating and downloading the firmware file:
 
@@ -99,6 +99,10 @@ After generating and downloading the firmware file:
     If you have trouble flashing a Tidbyt Gen 1, see [Error when trying to flash new firmware](device-notes.md#error-when-trying-to-flash-new-firmware).
 
 Check your device! It should be displaying something now!
+
+### Update firmware (OTA)
+
+If your device is already running Tronbyt firmware, you can update it over the air. Click "Edit Device" on the Home screen and scroll to the "Firmware Update" section.
 
 If you need to change your WiFi credentials or image URL after flashing, you can use the WiFi config portal. See the [Tronbyt WiFi Setup Portal](https://www.youtube.com/watch?v=OAWUCG-HRDs) video for a walkthrough.
 
