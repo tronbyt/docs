@@ -1,26 +1,16 @@
 # Getting Started
 
-There are multiple ways to run Tronbyt.
-First, you must decide if you want to run this on your own computers ("self-hosting"), or if you want to use a free webservice to host for you.
+First, you must deploy the Tronbyt server software.
 Then, you must update the code on the device itself to talk to the Tronbyt server by connecting it to your computer via USB.
 Finally, you will be able to configure Tronbyt to show the desired apps on your device.
 
 ## Deploy the server
 
-The first step is to start running the Tronbyt code.
-You need to decide on what computer this code will run.
-You can choose a computer you own or you can use a free webserver from Render.com.
-
-### Self-Hosting vs Webservice
-
-You will have more control when self-hosting, but you must have a computer that will be on whenever you want to use the display device.
-Using a free service might be easier initially. However, Render.com will reboot your Tronbyt instance at unpredictable times, which will lose your app configuration. You must remember to save your configuration and restore it when this occurs.
-
-### Self-hosting
-
 Running Tronbyt yourself requires some expertise, but nothing overly complex.
 See the [self-hosting instructions](https://github.com/tronbyt/server?tab=readme-ov-file#prerequisites).
 If you are planning to run Tronbyt on a Raspberry Pi, specific instructions can be found at [Device Specific Notes](device-notes.md#raspberry-pi).
+
+You can also deploy to [Railway](https://railway.com/deploy/tronbyt) for cloud hosting.
 
 Your server can be accessed by opening a web browser and typing:
 
@@ -30,17 +20,6 @@ Your server can be accessed by opening a web browser and typing:
 If you get a message like, "Your connection to this site is not secure" or "Your connection is not private", that is expected.
 Click "Show advanced" and "Proceed (unsafe)".
 This message is shown because there isn't proof your computer's identity has been verified, which is not needed in this specific case.
-
-### Render.com Free server
-
-[Video tutorial to deploy on Render.com](https://youtube.com/watch?v=2WfVaeX7BTk&feature=youtu.be)
-
-!!! warning
-
-    When using Render.com, the Tronbyt server will restart if a device doesn't talk to it for a long time.
-
-    - This will erase your device and app list. Be sure to back them up by going into "Edit device" and "Export configuration" to save the configuration and "Restore configuration" to bring it back.
-    - It can also restart if more than 500MB of memory is used, but this should be much rarer.
 
 ## Device Setup
 
