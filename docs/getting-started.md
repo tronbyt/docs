@@ -1,3 +1,6 @@
+---
+icon: lucide/rocket
+---
 # Getting Started
 
 First, you must deploy the Tronbyt server software.

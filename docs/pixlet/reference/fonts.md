@@ -1,3 +1,6 @@
+---
+icon: lucide/type
+---
 # Fonts
 
 Pixlet offers a couple of different fonts for rendering text. Which

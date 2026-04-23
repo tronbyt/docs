@@ -1,3 +1,6 @@
+---
+icon: lucide/smile
+---
 # Emoji
 
 Pixlet renders **1753+ Unicode emojis** directly in `render.Text()` widgets. Just include emoji characters in your strings and the runtime will pick the right sprite from the bundled sheet.

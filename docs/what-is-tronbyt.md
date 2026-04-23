@@ -1,3 +1,6 @@
+---
+icon: lucide/info
+---
 # What is Tronbyt?
 
 There was once a device called a Tidbyt, which was a nice pixel display board.

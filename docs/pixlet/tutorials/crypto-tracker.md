@@ -1,3 +1,6 @@
+---
+icon: lucide/bitcoin
+---
 # Crypto Tracker
 
 This article walks you through how to build a simple Bitcoin tracker

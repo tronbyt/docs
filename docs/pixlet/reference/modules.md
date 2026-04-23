@@ -1,3 +1,6 @@
+---
+icon: lucide/package
+---
 # Modules
 
 Pixlet scripts have access to a couple of modules that can be very

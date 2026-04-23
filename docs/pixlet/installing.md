@@ -1,3 +1,6 @@
+---
+icon: lucide/download
+---
 # Installing Pixlet
 To use Pixlet, one first has to install the CLI tool.
 

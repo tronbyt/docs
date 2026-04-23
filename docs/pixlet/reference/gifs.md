@@ -1,5 +1,6 @@
 ---
 title: GIFs
+icon: lucide/image
 ---
 # Creating GIFs for Tronbyt
 

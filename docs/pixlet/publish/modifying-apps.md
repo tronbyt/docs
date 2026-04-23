@@ -1,3 +1,6 @@
+---
+icon: lucide/pencil
+---
 # Modifying Apps
 Have a feature you want in an existing app? Want to change the way an existing app works? This guide is for you! There are two things you should know:
 

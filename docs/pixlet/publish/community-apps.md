@@ -1,3 +1,6 @@
+---
+icon: lucide/users
+---
 # Community Apps
 
 The vast majority of Tronbyt apps are contributed by

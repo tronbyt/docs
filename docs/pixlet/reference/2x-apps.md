@@ -1,5 +1,6 @@
 ---
 title: 2x Apps
+icon: lucide/maximize
 ---
 # Authoring Apps for 2x Resolution
 

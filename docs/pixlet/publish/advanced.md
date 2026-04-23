@@ -1,5 +1,6 @@
 ---
 title: Advanced
+icon: lucide/graduation-cap
 ---
 # Advanced Features
 

@@ -1,3 +1,6 @@
+---
+icon: lucide/settings
+---
 # Configuration
 
 The server can be configured via environment variables or a `.env` file.

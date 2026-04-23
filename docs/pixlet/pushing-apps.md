@@ -1,3 +1,6 @@
+---
+icon: lucide/upload
+---
 # Pushing Apps
 
 Low resolution applications are of course wonderful in their own

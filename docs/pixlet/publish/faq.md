@@ -1,5 +1,6 @@
 ---
 title: FAQ
+icon: lucide/circle-help
 ---
 # Frequently Asked Questions
 

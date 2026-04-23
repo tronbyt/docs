@@ -1,3 +1,6 @@
+---
+icon: lucide/layout-dashboard
+---
 # Tronbyt Manager
 
 The homepage of Tronbyt Manager is where you can manage devices and add apps to your devices.

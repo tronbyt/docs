@@ -1,3 +1,6 @@
+---
+icon: lucide/cpu
+---
 # Device Specific Notes
 
 ## Raspberry Pi

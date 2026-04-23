@@ -1,3 +1,6 @@
+---
+icon: lucide/clock
+---
 # Clock App
 
 This applet accepts a `timezone` parameter and produces a two frame

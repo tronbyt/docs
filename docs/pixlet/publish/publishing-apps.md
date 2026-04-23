@@ -1,3 +1,6 @@
+---
+icon: lucide/send
+---
 # Publishing Apps
 So pumped you're here and want to publish an app! If you haven't done so already, check out the overview on [community apps](community-apps.md) to get a better sense of what you're getting yourself into. You'll also want to check out the guide on [authoring apps](../authoring-apps.md) to get a better sense of how everything works together.
 

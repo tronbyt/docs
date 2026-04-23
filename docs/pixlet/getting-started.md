@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+icon: lucide/hammer
 ---
 # Build for Tronbyt
 

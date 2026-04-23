@@ -1,3 +1,6 @@
+---
+icon: lucide/file-sliders
+---
 # Schema
 Schema provides structure for configuring apps. We use schema inside of the Tronbyt mobile app to allow configuring starlark applications and store the values inside of our database.
 

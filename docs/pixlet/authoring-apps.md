@@ -1,3 +1,6 @@
+---
+icon: lucide/pen-tool
+---
 # Authoring Apps
 
 This guide provides best practices on how to build apps to integrate well with

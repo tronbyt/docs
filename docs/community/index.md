@@ -1,4 +1,5 @@
 ---
+icon: lucide/message-circle
 hide:
     - navigation
     - toc
