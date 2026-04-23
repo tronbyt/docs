@@ -61,52 +61,36 @@ Log in to your Tronbyt server with the username/password `Admin`/`password`.
 
 ### Update firmware
 
-On the "Home" page, click "New Tronbyt".
+1. On the "Home" page, click "New Tronbyt".
+2. Give it a name (this will be displayed on the Home screen), select the type of device you have, and hit "Save".
+3. Back on the Home screen, select "Firmware".
+4. Enter your WiFi network name and password.
 
-Give it a name (this will be displayed on the Home screen), select the type of device you have, and hit "Save".
+    !!! note
 
-This will take you back to the Home screen. Select "Firmware".
+        If you have a Tidbyt Gen1, note the "Swap Colors" checkbox. Don't check it yet, but remember it's here.
+        You might need to redo this step if the colors don't look right on your device.
 
-Enter your WiFi network name and password.
+5. Press "Generate Firmware file". This will download a file with a name like `firmware_tidbyt_gen1_cfb4bf45.bin` to your downloads folder.
+6. Download [ESP flasher](https://github.com/Jason2866/ESP_Flasher/releases).
+7. Install USB drivers if needed:
 
-!!! note
+    **Windows:** Download [CP210x Drivers](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads). Extract the archive, then right click `silabser.inf` and select "Install". (You might need to turn on [Show File Extensions](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01) to see the `.inf`)
 
-    If you have a Tidbyt Gen1, note the "Swap Colors" checkbox. Don't check it yet, but remember it's here.
-    You might need to redo this step if the colors don't look right on your device.
+    **Mac:** Download [CH34x Drivers](https://github.com/WCHSoftGroup/ch34xser_macos)
 
-Press "Generate Firmware file".
-This will download a file with a name like `firmware_tidbyt_gen1_cfb4bf45.bin` to your downloads folder.
+8. Connect your display device to a computer via USB. It does NOT need to be the computer running the Tronbyt software.
+9. Open ESP flasher and go through the different serial ports until you see something appear in the console.
+10. Press "Browse" next to "Firmware" and select the firmware you downloaded from Tronbyt.
+11. Press "Flash ESP". It will take a minute or two, but eventually it will say "Done! Flashing is complete!"
 
-Download [ESP flasher](https://github.com/Jason2866/ESP_Flasher/releases).
+    !!! tip
 
-**Windows:** Download [CP210x Drivers](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+        If you have trouble with this step and you have a Tidbyt Gen 1, see [Error when trying to flash new firmware](device-notes.md#error-when-trying-to-flash-new-firmware).
 
-1. Download the latest "Universal Windows Drivers" file. Find it in your downloads folder, right click and select "Extract all". This will create a new folder with the same name as the file.
-2. Go into the newly created folder and right click `silabser.inf` and select "Install" from the menu options. (You might need to turn on [Show File Extensions](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01) to see the `.inf`)
+12. Check your device! It should be displaying something now!
 
-**Mac:** Download [CH34x Drivers](https://github.com/WCHSoftGroup/ch34xser_macos)
-
-Connect your display device to a computer via USB.
-It does NOT need to be a computer running the Tronbyt software.
-
-Open ESP flasher.
-
-Go through the different serial ports until you see something appear in the console.
-
-Press "Browse" next to "Firmware" and select the firmware you downloaded from Tronbyt.
-
-Press "Flash ESP".
-
-It will take a minute or two, but eventually it will say "Done! Flashing is complete! Showing logs" and then a bunch more information will scroll past in the console window.
-You might need to scroll up to confirm.
-
-!!! tip
-
-    If you have trouble with this step and you have a Tidbyt Gen 1, see [Error when trying to flash new firmware](device-notes.md#error-when-trying-to-flash-new-firmware).
-
-Check your device! It should be displaying something now!
-
-If you need to change your WiFi credentials or image URL after flashing, you can achieve this by using the WiFi config portal. This video shows how to do it: [Tronbyt WiFi Setup Portal](https://www.youtube.com/watch?v=OAWUCG-HRDs)
+If you need to change your WiFi credentials or image URL after flashing, you can use the WiFi config portal. See the [Tronbyt WiFi Setup Portal](https://www.youtube.com/watch?v=OAWUCG-HRDs) video for a walkthrough.
 
 ## Updating
 
