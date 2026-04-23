@@ -4,22 +4,48 @@ First, you must deploy the Tronbyt server software.
 Then, you must update the code on the device itself to talk to the Tronbyt server by connecting it to your computer via USB.
 Finally, you will be able to configure Tronbyt to show the desired apps on your device.
 
-## Deploy the server
+## Install the server
 
-Running Tronbyt yourself requires some expertise, but nothing overly complex.
-See the [self-hosting instructions](https://github.com/tronbyt/server?tab=readme-ov-file#prerequisites).
-If you are planning to run Tronbyt on a Raspberry Pi, specific instructions can be found at [Device Specific Notes](device-notes.md#raspberry-pi).
+### Docker (recommended)
 
-You can also deploy to [Railway](https://railway.com/deploy/tronbyt) for cloud hosting.
+Docker Compose is the recommended installation method.
+See the [server repository](https://github.com/tronbyt/server) for the Compose file and full instructions.
 
-Your server can be accessed by opening a web browser and typing:
+```bash
+docker compose up -d
+```
 
-- `localhost:8000` if you are on the computer running the code
-- The name of the computer running the code followed immediately by `:8000` if you are running it on another computer in your network (such as a Raspberry Pi)
+For Raspberry Pi setup, see [Device Specific Notes](device-notes.md#raspberry-pi) or the [video walkthrough](https://youtu.be/UeHzD0uFxRo).
 
-If you get a message like, "Your connection to this site is not secure" or "Your connection is not private", that is expected.
-Click "Show advanced" and "Proceed (unsafe)".
-This message is shown because there isn't proof your computer's identity has been verified, which is not needed in this specific case.
+### Homebrew
+
+```bash
+brew install tronbyt-server
+brew services start tronbyt-server
+```
+
+### Home Assistant
+
+Install via the [Home Assistant add-on](https://github.com/kaffolder7/ha-app-tronbyt-server).
+
+### From source
+
+```bash
+go build -o tronbyt-server ./cmd/server
+./tronbyt-server
+```
+
+### Cloud hosting
+
+You can also deploy to [Railway](https://railway.com/deploy/tronbyt) instead of self-hosting.
+
+### Accessing the server
+
+Once installed, access the web interface at `http://localhost:8000`.
+
+If you're connecting from another device on your network, use the hostname or IP of the machine running Tronbyt followed by `:8000`.
+
+If you see a "connection not secure" warning, that is expected for HTTP connections. Click through to proceed. See [Configuration](configuration.md#https-tls) for setting up HTTPS.
 
 ## Device Setup
 
