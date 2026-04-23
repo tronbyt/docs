@@ -2,7 +2,7 @@
 
 [Tronbyt](https://github.com/tronbyt) is an open source connected, smart display that shows weather, stocks, sports, and a whole lot more.
 
-![HelloWorld](img/hello_world.png)
+![Tronbyt display](img/tronbyt_1.png)
 
 ## Getting Started
 
