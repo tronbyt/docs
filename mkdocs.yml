@@ -50,7 +50,6 @@ theme:
 
 plugins:
   - search
-  - tags
   - privacy
   - git-revision-date-localized:
       type: timeago
