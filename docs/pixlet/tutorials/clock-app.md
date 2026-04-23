@@ -1,4 +1,4 @@
-# A Clock App
+# Clock App
 
 This applet accepts a `timezone` parameter and produces a two frame
 animation displaying the current time with a blinking ':' separator

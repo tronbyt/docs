@@ -1,4 +1,4 @@
-# Module reference
+# Modules
 
 Pixlet scripts have access to a couple of modules that can be very
 helpful in developing applets. To make use of a module, use the `load`

@@ -1,4 +1,4 @@
-# A Crypto Tracker
+# Crypto Tracker
 
 This article walks you through how to build a simple Bitcoin tracker
 using Pixlet. It looks pretty great on a Tronbyt display!

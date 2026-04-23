@@ -1,4 +1,4 @@
-# Pixlet Fonts
+# Fonts
 
 Pixlet offers a couple of different fonts for rendering text. Which
 one to use depends on the information being presented and the amount
