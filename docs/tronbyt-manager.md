@@ -54,31 +54,3 @@ For an example, see [HomeAssistant-Tidbyt](https://github.com/motoridersd/HomeAs
 Refresh will refresh the app listings and code for the apps that are currently deployed.
 
 **API Key**: This can be used to allow other apps like HomeAssistant to control aspects of your account or devices.
-
-## Updating from Earlier Versions
-
-If you are upgrading from an earlier version of Tronbyt Server (earlier than version 1.0.0) that was running as `root`, you can switch to a non-root user for improved security. Follow these steps:
-
-1. Stop your server:
-
-    ```sh
-    docker compose down
-    ```
-
-2. Adjust the permissions of the existing data files:
-
-    ```sh
-    docker compose run --rm --user=0 --entrypoint="" web chown -R tronbyt:tronbyt -f /app/data /app/users
-    ```
-
-3. Update your Compose file to include the following line under the service definition:
-
-    ```yaml
-    user: "tronbyt:tronbyt"
-    ```
-
-4. Restart the server:
-
-    ```sh
-    docker compose up -d
-    ```

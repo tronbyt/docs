@@ -107,3 +107,17 @@ You might need to scroll up to confirm.
 Check your device! It should be displaying something now!
 
 If you need to change your WiFi credentials or image URL after flashing, you can achieve this by using the WiFi config portal. This video shows how to do it: [Tronbyt WiFi Setup Portal](https://www.youtube.com/watch?v=OAWUCG-HRDs)
+
+## Updating
+
+For Docker installations:
+
+```bash
+docker compose pull && docker compose up -d
+```
+
+For Homebrew installations:
+
+```bash
+brew upgrade tronbyt-server && brew services restart tronbyt-server
+```

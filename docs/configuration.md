@@ -99,17 +99,3 @@ tronbyt-server health
 # Custom URL
 tronbyt-server health https://your-tronbyt-server.com/health
 ```
-
-## Updating
-
-For Docker installations:
-
-```bash
-docker compose pull && docker compose up -d
-```
-
-For Homebrew installations:
-
-```bash
-brew upgrade tronbyt-server && brew services restart tronbyt-server
-```
