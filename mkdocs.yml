@@ -34,7 +34,7 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.progress
-    - navigation.sections
+    - navigation.tabs
     - navigation.indexes
     - navigation.top
     - navigation.footer
@@ -74,13 +74,14 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - What is Tronbyt?: what-is-tronbyt.md
-  - Getting Started: getting-started.md
-  - Tronbyt Manager: tronbyt-manager.md
-  - Configuration: configuration.md
-  - Device Specific Notes: device-notes.md
+  - Tronbyt:
+    - What is Tronbyt?: what-is-tronbyt.md
+    - Getting Started: getting-started.md
+    - Tronbyt Manager: tronbyt-manager.md
+    - Configuration: configuration.md
+    - Device Specific Notes: device-notes.md
   - Pixlet:
-    - Build for Tronbyt: pixlet/build-for-tronbyt.md
+    - Getting Started: pixlet/getting-started.md
     - Installing Pixlet: pixlet/installing.md
     - Authoring Apps: pixlet/authoring-apps.md
     - Pushing Apps: pixlet/pushing-apps.md
