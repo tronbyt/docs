@@ -113,7 +113,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/tronbyt
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/HxST87KxdK
+      link: /discord/
 
 watch:
   - overrides

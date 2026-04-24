@@ -1,3 +1,18 @@
+{% if page and page.meta and page.meta.redirect_to %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <link rel="canonical" href="{{ page.meta.redirect_to }}">
+    <script>var anchor=window.location.hash.substr(1);location.href="{{ page.meta.redirect_to }}"+(anchor?"#"+anchor:"")</script>
+    <meta http-equiv="refresh" content="0; url={{ page.meta.redirect_to }}">
+</head>
+<body>
+You're being redirected to <a href="{{ page.meta.redirect_to }}">{{ page.meta.redirect_to }}</a>.
+</body>
+</html>
+{% else %}
 {% extends "base.html" %}
 
 {% block extrahead %}
@@ -9,3 +24,4 @@
     <meta name="apple-mobile-web-app-title" content="{{ config.site_name }}" />
     <link rel="manifest" href="/icons/site.webmanifest" />
 {% endblock %}
+{% endif %}

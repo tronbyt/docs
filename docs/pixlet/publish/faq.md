@@ -13,4 +13,4 @@ pixlet format
 ```
 
 ## When will my app be available?
-When new apps are merged in the apps repo, they get released to all users immediately. New apps get announced on [Discord](https://discord.gg/HxST87KxdK).
+When new apps are merged in the apps repo, they get released to all users immediately. New apps get announced on [Discord](../../discord.md).
