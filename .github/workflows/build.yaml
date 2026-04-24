@@ -33,11 +33,6 @@ jobs:
       - name: Build docs
         run: zensical build
 
-      - name: Minify
-        uses: docker://tdewolff/minify
-        with:
-          args: -i -r /github/workspace/site
-
       - name: Compress
         run: tar -czvf docs.tar.gz site
 
