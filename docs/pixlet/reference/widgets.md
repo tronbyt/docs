@@ -514,7 +514,7 @@ be rendered and so on.
 
 It comes in quite useful when chaining animations.
 If you want to know more about that, go check
-out the [animation](animation.md) documentation.
+out the [animation](animations.md) documentation.
 
 #### Attributes
 | Name | Type | Description | Required |
