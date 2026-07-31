@@ -76,7 +76,7 @@ pixlet serve apps/{{appname}}/{{app_name}}.star
 You can generate an enlarged screen render by entering:
 
 ```
-pixlet render apps/{{appname}}/{{app_name}}.star --gif --magnify 10
+pixlet render apps/{{appname}}/{{app_name}}.star --format gif --magnify 10
 ```
 
 ### 4. Making a PR
@@ -85,5 +85,5 @@ Before submitting your app, run `pixlet check apps/{{appname}}/{{app_name}}.star
 
 When you go to make a PR, give us a little background on what your app does. In addition, include a render from the following command so we can ooh-ahh:
 ```
-pixlet render apps/{{appname}}/{{app_name}}.star --gif --magnify 10
+pixlet render apps/{{appname}}/{{app_name}}.star --format gif --magnify 10
 ```
