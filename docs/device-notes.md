@@ -6,8 +6,7 @@ icon: lucide/cpu
 ## Raspberry Pi
 
 A Raspberry Pi is suitable for running Tronbyt, as long as it has sufficient RAM. See the [installation walkthrough video](https://youtu.be/UeHzD0uFxRo).
-Check which device you have on the [Raspberry Pi product series page](https://www.raspberrypi.com/news/raspberry-pi-product-series-explained/) and ensure you have more than 512MB of memory, such as 1GB.
-512MB may be suitable with some additional configuration.
+Check which device you have on the [Raspberry Pi product series page](https://www.raspberrypi.com/news/raspberry-pi-product-series-explained/) and ensure you have at least 512MB of memory.
 A 64-bit OS is highly recommended.
 
 ### Deploying Tronbyt Manager to a Raspberry Pi
