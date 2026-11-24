@@ -79,6 +79,74 @@ You can generate an enlarged screen render by entering:
 pixlet render apps/{{appname}}/{{app_name}}.star --format gif --magnify 10
 ```
 
+#### The manifest
+
+Every app has a `manifest.yaml` next to its `.star` file, which describes the app to Tronbyt servers and the [App Viewer](https://apps.tronbyt.com/).
+`pixlet create` fills in the basics from your answers; add the other fields yourself.
+For example:
+
+```yaml
+id: tides
+name: Tides
+summary: Tide charts
+desc: Daily tide charts for your location.
+author: Mark Spicer
+fileName: tides.star
+packageName: tides
+recommendedInterval: 15
+supports2x: true
+supports64x64: true
+category: weather
+tags:
+  - outdoors
+  - ocean
+```
+
+| Field | Description |
+| --- | --- |
+| `id` | The app's unique identifier, in lowercase with hyphens. |
+| `name` | The app's name, as shown in app listings. |
+| `summary` | A very brief summary (27 characters or less). |
+| `desc` | A longer description of what the app does. |
+| `author` | Your name or handle. Will be displayed publicly. |
+| `fileName` | The app's `.star` file. Defaults to the package name plus `.star`. |
+| `packageName` | The app's package name, usually the same as its folder name. Preview images are named after it (see below). |
+| `recommendedInterval` | How often, in minutes, the app should be re-rendered. Shown as the recommended render interval in the app's settings. |
+| `supports2x` | `true` if the app supports 2x (128x64) displays. See [2x Apps](../reference/2x-apps.md). |
+| `supports64x64` | `true` if the app adapts its layout for square (64x64) displays. Checks fail if an app checks for a square display without this flag. |
+| `category` | One category from the apps repo's [`categories.yaml`](https://github.com/tronbyt/apps/blob/main/categories.yaml), such as `weather` or `sports`. Checks fail for any other value. |
+| `tags` | Optional keywords that help people find the app. |
+| `minPixletVersion` | Optional. The oldest Pixlet version the app works with, e.g. `v0.55.0`. Pixlet refuses to run the app on anything older, so set it when the app uses a recent Pixlet feature. |
+| `broken` and `brokenReason` | Set by maintainers when an app stops working (see below). |
+
+`published` and `updated` are added and kept up to date automatically when your pull request is opened, so don't set them yourself.
+
+#### Preview images
+
+The image shown for your app on Tronbyt servers and in the App Viewer is a render saved in the app's folder, named after its `packageName`:
+
+```
+pixlet render -z 9 apps/{{appname}}/{{app_name}}.star -o apps/{{appname}}/{{packageName}}.webp
+```
+
+- For 2x support, add a 2x render as `{{packageName}}@2x.webp` (render with `-2`).
+- For square displays, add a 64x64 render as `{{packageName}}@64x64.webp` (render with `-w 64 -t 64`).
+  Unlike `@2x`, this image doesn't mark the app as supporting square displays: set `supports64x64` for that.
+- Use a render that shows the app working with its default settings, not an error or setup message.
+
+#### Broken apps
+
+If an app stops working and can't be fixed for now (for example, the service it uses has shut down), it is marked broken in its manifest:
+
+```yaml
+broken: true
+brokenReason: 'api.example.com: no such host'
+```
+
+Tronbyt servers then show a **BROKEN** badge with the reason, and the App Viewer shows a warning.
+Checks skip broken apps.
+When you fix an app, remove both lines in the same pull request, so the checks run on it again.
+
 ### 4. Making a PR
 
 Before submitting your app, run `pixlet check apps/{{appname}}/{{app_name}}.star` to check your code for errors.
