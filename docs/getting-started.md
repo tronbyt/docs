@@ -40,6 +40,7 @@ It's free for personal use on a Raspberry Pi, NAS, mini PC or other computer, or
 Get started at [umbrel.com/downloads](https://umbrel.com/downloads).
 
 The Tronbyt app for Umbrel is made by Tronbyt community member and contributor [@saltedlolly](https://github.com/saltedlolly).
+It packages the [official Tronbyt Server Docker image](https://github.com/tronbyt/server/pkgs/container/server) for Umbrel.
 It installs Tronbyt Server in one click, with no need to understand Docker, and new versions install with a single click too.
 [Learn more](https://saltedlolly.com/2026/09/11/self-host-your-tidbyt-the-easy-way-with-tronbyt-on-umbrel/).
 It's a community app, not made by Umbrel or the Tronbyt maintainers, so report any problems with it on [its GitHub repository](https://github.com/saltedlolly/umbrel-app-store/issues).
