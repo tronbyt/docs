@@ -39,6 +39,23 @@ If the render interval is 0, the code is run every time the app is displayed, wh
 However, the image sent by the server will be fresh if the app's render interval is 0 and it's the app's turn to display.
 If you have 1 app running with a cycle time of 15s, the image will be updated every 15s.
 
+## Notification sounds
+
+Devices with a speaker or buzzer can play a short sound for an app.
+A Tidbyt Gen 2 has a piezo buzzer that plays tones; a Raspberry Pi (Tronberry), or an ESP32 with a DAC, has a full speaker that can also play audio files.
+Click "Edit device" to set the device's **Audio Capability**, its **Speaker Volume**, and whether sounds are muted or quieter during Night Mode and Dim Mode.
+You can also mute all sounds from the device's card on the Home screen.
+
+To give an app a sound, open the app's settings and choose a **Notification Sound**: one of the default sounds, a sound that comes with the app, or (on a full speaker) a custom sound uploaded by the admin.
+Then choose its **Sound Trigger**:
+
+* **Every time app is displayed**.
+* **Only when display content changes**: plays when the app's image changes.
+* **When the app asks (e.g. a goal is scored)**: the app decides which moments deserve a sound, such as a goal in a scores app, or "time to leave" in a calendar app.
+  Use this for apps that support it; their description says which events make a sound.
+
+An app plays at most one sound every 30 seconds.
+
 ## Admin Settings
 
 **Create User**: The administrator can create new users, delete users, and update or change the system apps repo.

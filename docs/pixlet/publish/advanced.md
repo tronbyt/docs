@@ -77,3 +77,62 @@ would encourage developers to use some restraint. If the app can be
 redesigned to fit all its data in a shorter animation, then that may
 be preferable. If not, then `show_full_animation` may be the way to
 go.
+
+## Asking for a notification sound
+
+Devices with a speaker or buzzer (such as the Tidbyt Gen 2) can play a
+notification sound for an app. Users choose the sound and when it
+plays in the app's settings on their Tronbyt server. Most triggers,
+like *Every time app is displayed* or *Only when display content
+changes*, need nothing from the app.
+
+Some apps change their image on every render but only have something
+worth a sound now and then. A scores app shows a ticking match clock,
+but should only make a noise when a team scores. A calendar app counts
+down every minute to when you need to leave, but should only beep at
+10 minutes, 5 minutes and "leave now". Only the app knows which
+changes matter, so it can ask for the sound itself by passing
+`sound_id` to its `Root` widget:
+
+```python
+def main(config):
+    match = get_match()
+    return render.Root(
+        sound_id = "match-%s-score-%d-%d" % (match.id, match.home, match.away),
+        child = render_score(match),
+    )
+```
+
+When the user has chosen a sound and set the trigger to **When the app
+asks**, the server plays that sound the first time a new `sound_id`
+arrives. It remembers the last `sound_id` it played for each
+installed app, so returning the same value again on later renders
+doesn't repeat the sound. Your app doesn't have to remember what it
+has already announced: keep returning `match-123-score-2-1` for the
+rest of the match, and the next goal's `match-123-score-2-2` plays.
+
+Things to know:
+
+- Make each `sound_id` name the event, not the time. Something like
+  `leave-<event id>-10min` plays once; anything containing the current
+  time would play on every render.
+- Leave `sound_id` out (or pass `""`) when there's nothing to
+  announce. Nothing plays, and the last ID is still remembered.
+- The user's chosen sound is played, and the user's mute, night mode,
+  dim mode and volume settings still apply. A new `sound_id` that
+  arrives while the device is muted is skipped, not saved for later, so
+  it can't play after the device is unmuted.
+- An app's sounds are at least 30 seconds apart. A request that arrives sooner
+  isn't lost: it plays on a later render that still returns it.
+- Values longer than 256 characters, or containing control
+  characters, are ignored.
+- Nothing plays unless the user picks **When the app asks**, so
+  describe in your app's README which events make a sound.
+- Previews (on the app's settings page, or when rendering with
+  `pixlet render`) never play sounds. `pixlet render` logs the
+  `sound_id` your app returned, which is handy for testing.
+
+!!! note
+
+    `sound_id` needs a recent Pixlet and Tronbyt server. Older versions
+    reject the unknown argument, so the app fails to render on them.
