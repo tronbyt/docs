@@ -23,4 +23,4 @@ hide:
 ### Engage with the community
 
 * Join other Tronbyt users on [Discord](discord.md).
-* Get inspired by [checking out all the apps the community has built](https://tronbyt.github.io/apps/).
+* Get inspired by [checking out all the apps the community has built](https://apps.tronbyt.com/).
