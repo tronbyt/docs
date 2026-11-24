@@ -35,7 +35,7 @@ The server can be configured via environment variables or a `.env` file.
 | Variable | Description | Default |
 | --- | --- | --- |
 | `SYSTEM_APPS_REPO` | Git repository URL for system apps | `https://github.com/tronbyt/apps.git` |
-| `SYSTEM_APPS_AUTO_REFRESH` | Automatically refresh the system apps repository | `false` |
+| `SYSTEM_APPS_AUTO_REFRESH` | Automatically update the system apps every 12 hours. Once an admin changes the "Automatic Updates" setting in the web interface, that setting is used instead | `false` |
 | `GITHUB_TOKEN` | GitHub token for private app repositories | |
 
 ## HTTPS (TLS)
@@ -71,7 +71,7 @@ By default, an in-memory cache is used. For persistent caching across container 
 | Variable | Description | Default |
 | --- | --- | --- |
 | `ENABLE_PPROF` | Enable Go pprof routes at `/debug/pprof/` | `0` |
-| `ENABLE_UPDATE_CHECKS` | Check for new releases on startup | `true` |
+| `ENABLE_UPDATE_CHECKS` | Check GitHub for new server releases (at startup, then every hour) and for new device firmware (every 12 hours) | `true` |
 
 The `/metrics` endpoint exposes Prometheus-compatible metrics including:
 

@@ -12,6 +12,8 @@ It's useful to remember that each app is sent to the device as an image file.
 Click "Add app" to see the app listings.
 Click an entry to see any configuration options and Save to start showing it on your device.
 
+To browse every community app from any browser, with previews, search, filters and author pages, visit the [App Viewer](https://apps.tronbyt.com/).
+
 ## Device / App settings
 
 Each device is listed by the Name property created when adding the device.
@@ -48,6 +50,10 @@ New users cannot do these things, but they can add devices and apps.
 Default is <https://github.com/tronbyt/apps>.
 
 Refresh will refresh the app listings and code for the apps that are currently deployed.
+
+**Automatic updates**: Under "Automatic Updates", tick "Automatically update system apps every 12 hours" to keep the system apps up to date without clicking Refresh.
+New apps then appear in the app listings within 12 hours of being added to the repo.
+Updates can change or break apps already installed on your devices.
 
 **Custom app repo**: This is used to supplement the master list.
 If you are developing a new app, you can point Tronbyt here and your new app will show up in the app listing without having to be accepted into the system app repo.

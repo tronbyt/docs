@@ -32,6 +32,7 @@ some reviewing from other community
 developers to make sure it's up to snuff.
 
 Once a new app is merged, it will be publicly available to everyone.
+It appears in the [App Viewer](https://apps.tronbyt.com/) shortly afterwards, and on Tronbyt servers when they next update their system apps.
 
 For the nitty gritty on how to get a new app published, check out
 [Publishing Apps](publishing-apps.md).
