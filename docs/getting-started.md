@@ -105,7 +105,18 @@ Check your device! It should be displaying something now!
 
 ### Update firmware (OTA)
 
-If your device is already running Tronbyt firmware, you can update it over the air. Click "Edit Device" on the Home screen and scroll to the "Firmware Update" section.
+If your device is already running Tronbyt firmware v1.4.6 or later, or is a Raspberry Pi running Tronberry, you can update it over Wi-Fi (OTA).
+Older firmware needs to be [flashed over USB](#initial-flash-usb) once first.
+
+The server checks for new firmware releases every 12 hours and downloads them.
+When a newer version is available for a device, its card on the Home screen says so on the **Firmware** button.
+
+To update:
+
+1. Click **Firmware** on the device's card.
+2. Under **Update over Wi-Fi (OTA)**, **Version on Device** shows the installed version and whether it is up to date or an update is available.
+3. Choose a version (the newest is selected) and click **Install Selected Firmware**.
+   The device downloads the update from your server and restarts.
 
 If you need to change your WiFi credentials or image URL after flashing, you can use the WiFi config portal. See the [Tronbyt WiFi Setup Portal](https://www.youtube.com/watch?v=OAWUCG-HRDs) video for a walkthrough.
 
