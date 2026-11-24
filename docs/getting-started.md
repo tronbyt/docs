@@ -31,6 +31,27 @@ brew services start tronbyt-server
 
 Install via the [Home Assistant add-on](https://github.com/kaffolder7/ha-app-tronbyt-server).
 
+### Umbrel
+
+Run Tronbyt Server on an Umbrel home server using the community Tronbyt app.
+
+[umbrelOS](https://umbrel.com) turns a computer into a home server with a one-click app store.
+It's free for personal use on a Raspberry Pi, NAS, mini PC or other computer, or you can buy an Umbrel Home or Umbrel Pro with it already installed.
+Get started at [umbrel.com/downloads](https://umbrel.com/downloads).
+
+The Tronbyt app for Umbrel is made by Tronbyt community member and contributor [@saltedlolly](https://github.com/saltedlolly).
+It packages the [official Tronbyt Server Docker image](https://github.com/tronbyt/server/pkgs/container/server) for Umbrel.
+It installs Tronbyt Server in one click, with no need to understand Docker, and new versions install with a single click too.
+[Learn more](https://saltedlolly.com/2026/09/11/self-host-your-tidbyt-the-easy-way-with-tronbyt-on-umbrel/).
+It's a community app, not made by Umbrel or the Tronbyt maintainers, so report any problems with it on [its GitHub repository](https://github.com/saltedlolly/umbrel-app-store/issues).
+
+To install it:
+
+1. On your Umbrel, open the **App Store**, click **•••** at the top right, then **Community App Stores**.
+2. Paste `https://github.com/saltedlolly/umbrel-app-store` and click **Add**.
+3. Open the **saltedlolly App Store** and install **Tronbyt**.
+4. Open Tronbyt from your Umbrel home screen, or go to `http://umbrel.local:19191`.
+
 ### From source
 
 ```bash
